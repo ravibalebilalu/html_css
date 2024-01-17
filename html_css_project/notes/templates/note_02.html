@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block start %}
+
+   
+<button><a href="/">Home</a></button>
+<hr>
+
+<br><br><br>
+ <h3>Unordered List</h3>
+{% for person in students %}
+ <ul>
+    <p>student : {{forloop.counter}}</p>
+    <li>Name : {{ person.name}}</li>
+    <li>Role_number : {{person.role_number}}</li>
+    <li>Email : {{person.email}}</li>
+ </ul>
+ {% endfor %}
+ <br><br><br>
+ <hr>
+ <h3>Ordered List</h3>
+ {% for person in students %}
+ <p>Student :{{forloop.counter}}</p>
+ <ol>
+    <li>Name : {{person.name}}</li>
+    <li>Role Number : {{person.role_number}}</li>
+    <li>Email : {{person.email}}</li>
+ </ol>
+
+{% endfor %}
+<hr>
+<h3>Table</h3>
+
+
+<table border="1px">
+<tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Role Number</th>
+    <th>Email</th>
+    <th>Date</th>
+    <th>Time</th>
+</tr> 
+    {% for person in students %}
+    <tr>
+        <td>{{person.id}}</td>
+        <td> {{person.name}} </td>
+        <td>{{person.role_number}}</td>
+        <td>{{person.email}}</td>
+        <td>{{person.date}}</td>
+        <td>{{person.time}}</td>
+         <td><button><a href="{% url 'edit_student' id=person.id %}">Edit </a></button></td>
+     </tr>
+    {% endfor %}
+</table>
+ 
+  
+ 
+{% endblock %}
