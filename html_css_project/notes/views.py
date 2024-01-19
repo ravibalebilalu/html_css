@@ -73,7 +73,9 @@ def sematic_tags(request):
     return render(request,'note_05.html')
 
 def html_06(request):
-     
-
     return render(request,'note_06.html')
+
+def display_property(request):
+    return render(request,'note_07.html')
+
   
