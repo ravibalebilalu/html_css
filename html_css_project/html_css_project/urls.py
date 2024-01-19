@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from notes.views import my_view,students_list,edit_student
+from notes.views import my_view,students_list,edit_student,another_view,sematic_tags,html_06
 
 urlpatterns = [
+    path('html_06',html_06,name= 'html_06'),
+    path('sematic_tags',sematic_tags,name= "sematic_tags"),
+    path('another_view',another_view,name='another_view'),
     path('',my_view,name="my_view"),
     path('students_list/',students_list,name='students_list'),
     path('edit_student/<id>/',edit_student,name = 'edit_student'),

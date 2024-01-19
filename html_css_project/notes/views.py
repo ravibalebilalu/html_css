@@ -66,8 +66,14 @@ def edit_student(request,id):
     context = {"student":[student]}
     return render(request,'note_03.html',context)
 
+def another_view(request):
+    return render(request,'note_04.html')
 
+def sematic_tags(request):
+    return render(request,'note_05.html')
 
+def html_06(request):
+     
 
- 
+    return render(request,'note_06.html')
   

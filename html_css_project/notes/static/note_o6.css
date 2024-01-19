@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: green;
+}
+.box1{
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    border: 2px solid blue;
+    height: 50px;
+    width: 200px;
+    box-sizing: border-box;
+}
+.box2{
+    color: white;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid blue;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 300px;
+    width: 300px;
+    color: black;
+    border: 2px solid green;
+    background-color: yellow;
+     
+    
+}
+
+.upper{
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: 2px solid blue;
+    background-color: magenta;
+    margin: 20px;
+    padding: 10px;
+     
+}
+
+.lower{
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: 2px solid blue;
+    background-color: magenta;
+    padding: 10px;
+    margin: 30px;
+     
+}
+
+.upstairs{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 20px;
+    margin:  20px;
+}
+.step1,.step2,.step3,.step4{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+      
+}
+.step1{
+    margin-left: 0px;
+}
+.step2{
+    margin-left: 50px;
+}
+
+.step3{
+    margin-left: 100px;
+}
+.step4{
+    margin-left: 150px;
+}
+
+.test_box{
+    border: 2px solid black;
+    background-color: green;
+    /*width: 1020px;*/
+    width:80vw;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.container{
+    color: white;
+    border: 2px solid black;
+    background-color: green;
+    /*width: 1020px;*/
+    width:100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    /*margin:auto;*/
+    /*margin:23px auto;*/
+    margin:  0;
+     padding: 10px;
+     font-size: 10px;
+
+     
+}
+
+.container p{
+    font-size: 1.5em;
+}
+.container .rem_p{
+ font-size: 2rem;   
+}
+
+.vmin_vmax{
+    background-color: lightseagreen;
+    color: green;
+    font-size: 18px;
+    width: 100vmin;
+    box-sizing: border-box;
+    border: 2px solid red;
+    margin: auto;
+    padding: 25px;
+
+}
