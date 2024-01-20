@@ -1,47 +1,51 @@
-  
- {% extends 'base.html' %}
-{% block start %}    
+{% extends 'base.html' %}
+{% block start %}
 <header>
   <nav>
     <ul>
-       <li><button><a href="students_list">Students List</a></button></li>
-       <ul>Forms
-       <li>Label</li>
-       <li>Input</li>
-       <li>Hyperlinks(a)</li>
-       <li>Buttons</li>
+      <li><button><a href="students_list">Students List</a></button></li>
+      <ul>Forms
+        <li>Label</li>
+        <li>Input</li>
+        <li>Hyperlinks(a)</li>
+        <li>Buttons</li>
       </ul>
-       <br>
-       <li><button><a href="another_view">Inline and Block Elements</a></button></li>
-       <br>
-       <li><button><a href="sematic_tags">Sematic Tags</a></button></li>
-        <ul>Sematic Tags
-          <li>header</li>
-          <li>Navbar</li>
-          <li>Main</li>
-          <li>Footer</li>
-        </ul>
-       <br>
-       <li><button><a href="html_06">Box Model</a></button></li>
-        <ul>Box Model
-          <li>Box sizing</li>
-          <li>margin</li>
-          <li>padding</li>
-          <li>font size: px</li>
-          <li>font size:em</li>
-          <li>font size:rem</li>
+      <br>
+      <li><button><a href="another_view">Inline and Block Elements</a></button></li>
+      <br>
+      <li><button><a href="sematic_tags">Sematic Tags</a></button></li>
+      <ul>Sematic Tags
+        <li>header</li>
+        <li>Navbar</li>
+        <li>Main</li>
+        <li>Footer</li>
+      </ul>
+      <br>
+      <li><button><a href="html_06">Box Model</a></button></li>
+      <ul>Box Model
+        <li>Box sizing</li>
+        <li>margin</li>
+        <li>padding</li>
+        <li>font size: px</li>
+        <li>font size:em</li>
+        <li>font size:rem</li>
 
-        </ul>
-       <br>
-       <li><button><a href="display_property">Display  Droperty</a></button></li>
-        
-        <ul>Display property:
+      </ul>
+      <br>
+      <li><button><a href="display_property">Display Droperty</a></button></li>
+
+      <ul>Display property:
         <li>inline</li>
         <li>inline-block</li>
         <li>Shodows and Outlines</li>
+        <li>List Styling</li>
+        <li>Overflow</li>
 
       </ul>
+         
+           <li><button><a href="position">Position</a></button></li>
 
+         
     </ul>
   </nav>
 </header>
@@ -49,65 +53,69 @@
 <h4>LINK</h4>
 <a href="https://google.com">google</a>
 <h4>Image</h4>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9H0LtDP3e-yRtRIFQz7ODdTzAUr8z1X8xMSJfOo0Tug&s" alt="shreekrishna">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9H0LtDP3e-yRtRIFQz7ODdTzAUr8z1X8xMSJfOo0Tug&s"
+  alt="shreekrishna">
 
 <h4>Forms</h4>
 
 
 <form action="" method="post">
   {% csrf_token %}
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
-    <br> <br>
-    <label for="role_number" >Role Number</label>
-    <input type="text" name="role_number" id="role_number">
-    <br> <br>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email">
-    <br> <br>
-    <label for="date">Date</label>
-    <input type="date" name="date" id="date">
-    <br> <br>
-    <label for="time">Time</label>
-     <input type="time" name="time" id="time"> 
-     <br> <br>
-     <label for="count">count</label>
-     <input type="number" name="count" id="count">
-     <br> <br>
-     <label for="meritial_status">Meritial_status</label>
-     <input type="checkbox" name="meritial_status">
-     <br> <br>
-     <label for="gender">Male</label>
-     <input type="radio" name="gender"> Female<input type="radio" name="gender" id="gender">
-     <br> <br>
-        <label for="my_text">Write Here</label>
-      <br><textarea name="my_text" rows="5" cols="50" id="my_text"></textarea>
-        <br> <br>
-      
-   
-    <br><br>
-    <div>
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name">
+  <br> <br>
+  <label for="role_number">Role Number</label>
+  <input type="text" name="role_number" id="role_number">
+  <br> <br>
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email">
+  <br> <br>
+  <label for="date">Date</label>
+  <input type="date" name="date" id="date">
+  <br> <br>
+  <label for="time">Time</label>
+  <input type="time" name="time" id="time">
+  <br> <br>
+  <label for="count">count</label>
+  <input type="number" name="count" id="count">
+  <br> <br>
+  <label for="meritial_status">Meritial_status</label>
+  <input type="checkbox" name="meritial_status">
+  <br> <br>
+  <label for="gender">Male</label>
+  <input type="radio" name="gender"> Female<input type="radio" name="gender" id="gender">
+  <br> <br>
+  <label for="my_text">Write Here</label>
+  <br><textarea name="my_text" rows="5" cols="50" id="my_text"></textarea>
+  <br> <br>
+
+
+  <br><br>
+  <div>
     <label for="car">Car</label>
     <select name="my_car" id="car">
-        <option value="indica">Indica</option>
-        <option value="maruti">Maruti</option>
-        <option value="zen">Zen</option>
+      <option value="indica">Indica</option>
+      <option value="maruti">Maruti</option>
+      <option value="zen">Zen</option>
     </select>
-<br><br><br>
-</div>
-<div>
-  <input type="reset" value="reset_now">
- </div>
-<br>
-<div>
-<input type="submit" value="submit_now">
-</div>
-<br> 
+    <br><br><br>
+  </div>
+  <div>
+    <input type="reset" value="reset_now">
+  </div>
+  <br>
+  <div>
+    <input type="submit" value="submit_now">
+  </div>
+  <br>
 
 </form>
 <br>
- <button><a href="/students_list/">Students List</a></button>
+<button><a href="/students_list/">Students List</a></button>
 <br>
 <hr>
-   
- {% endblock %}
+
+
+
+{% endblock %}
+

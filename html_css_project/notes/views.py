@@ -78,4 +78,7 @@ def html_06(request):
 def display_property(request):
     return render(request,'note_07.html')
 
+def position(request):
+    return render(request,'note_08.html')
+
   
